@@ -1,0 +1,204 @@
+/* Montserrat y Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap');
+
+/* inicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Montserrat', sans-serif; 
+ font-family: 'Roboto', sans-serif; 
+ 1rem = 16px 
+ Estilos generales para el cuerpo*/
+
+/* Index QuieroFut */
+body {
+    background-color: #16191c;
+    font-family: 'Roboto', sans-serif;
+    color: #cbd5e1;
+}
+
+/* Montserrat una sola vez para no repetirlo en cada titulo, correccion hecha por Jesus */
+h1, h2, h3, header strong{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    color: #00b4d8;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+h2{
+    color: #94a3b8;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+h3{
+    color: #00b4d8;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #94a3b8;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.parrafo-alternativo{
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+/*estilos de etiquetas Nav */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: #1e232a;
+    padding: 16px;
+}
+
+header strong{
+    color: #00b4d8;
+    font-size: 22px;
+}
+
+.lista-navegacion{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.enlace-nav{
+    display: block;
+    color: #fffffffa;
+    text-decoration: none;
+    padding: 8px 4px;
+}
+
+.enlace-nav:hover{
+    color: #00b4d8;
+}
+
+/*contenido */
+main{
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+section:last-child{
+    margin-bottom: 0;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: #1e232a;
+    border-radius: 8px;
+    width: 100%;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+figure img{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    align-self: flex-start;
+    border-radius: 6px;
+}
+
+/*Estilos Footer, pie de pagina */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e232a;
+    color: #fffffffa;
+    padding: 20px 32px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+footer a{
+    color: #fffffffa;
+}
+
+.seccion-tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seccion-presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (min-width: 768px){
+
+    main{
+        padding: 32px 24px;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 24px;
+    }
+
+    .seccion-tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px){
+
+    main{
+        padding: 40px 32px;
+    }
+
+    header{
+        padding: 16px 32px;
+    }
+
+    .seccion-tarjetas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+}
