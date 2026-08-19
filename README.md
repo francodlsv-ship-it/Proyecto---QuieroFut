@@ -10,5 +10,5 @@ Estas páginas son:
     * sobre-mi.html
     * proyectos.html
     * contacto.html
-    * proyecto-detalle.html.
-* Carpeta imagenes: Almacena las fotos y recursos visuales que se muestran en la web.
+    * servicios.html.
+* Carpeta imagenes: Almacena las fotos y recursos visuales que se muestran en la web.   

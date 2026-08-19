@@ -202,3 +202,18 @@ footer a{
         gap: 24px;
     }
 }
+
+nav .navbar-brand {
+    color: #00b4d8;
+}
+
+nav .nav-link.active {
+    color: #00b4d8;
+}
+
+.btn-primary {
+    background-color: #00b4d8;
+    border-color: #00b4d8;
+}
+
+
