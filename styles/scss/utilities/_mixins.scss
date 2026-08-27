@@ -1,0 +1,10 @@
+@mixin button-style($background-color, $hover-color) {
+    background-color: $background-color;
+    color: white;
+    border-radius: $radio-bordes;
+
+    &:hover {
+        background-color: $hover-color;
+        opacity: 0.8;
+    }
+}

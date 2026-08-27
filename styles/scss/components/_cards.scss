@@ -1,0 +1,21 @@
+article {
+    background-color: $color-fondo-secundario;
+    border-radius: $radio-bordes;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;   
+    padding: 10px 0;
+img {
+        width: 100%;
+        height: auto;
+        align-self: flex-start; 
+        border-radius: $radio-bordes;
+    }
+}
