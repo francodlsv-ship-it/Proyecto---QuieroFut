@@ -1,21 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+%efecto-hover {
+  @include transition(transform, 0.3s);
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
 article {
-    background-color: $color-fondo-secundario;
-    border-radius: $radio-bordes;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
+  @extend %efecto-hover;
+  background: $color-fondo-secundario;
+  border-radius: $radio-borde;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.card {
+  @extend %efecto-hover;
 }
 figure {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;   
-    padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0;
 img {
-        width: 100%;
-        height: auto;
-        align-self: flex-start; 
-        border-radius: $radio-bordes;
-    }
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    align-self: flex-start;
+    border-radius: $radio-borde;
+  }
 }

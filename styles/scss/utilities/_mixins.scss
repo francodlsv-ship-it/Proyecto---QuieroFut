@@ -1,10 +1,8 @@
-@mixin button-style($background-color, $hover-color) {
-    background-color: $background-color;
-    color: white;
-    border-radius: $radio-bordes;
-
-    &:hover {
-        background-color: $hover-color;
-        opacity: 0.8;
+@mixin transition($property, $duration: 0.3s, $timing-function: ease-in-out) {
+    transition: $property $duration $timing-function;
+}
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
     }
 }
