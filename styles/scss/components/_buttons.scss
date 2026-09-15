@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as *;
 .btn-primary {
   background: $color-primario;
-  color: white;
+  color: $color-blanco;
   border-radius: $radio-borde;
   @include transicion(background-color);
   &:hover {
