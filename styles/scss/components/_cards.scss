@@ -1,8 +1,7 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
-
 %efecto-hover {
-  @include transition(transform, 0.3s);
+  @include transicion(transform, 0.3s);
   &:hover {
     transform: translateY(-4px);
   }
@@ -25,7 +24,7 @@ figure {
   flex-direction: column;
   gap: 8px;
   padding: 10px 0;
-img {
+  img {
     width: 100%;
     max-width: 420px;
     height: auto;

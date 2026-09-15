@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap');
+h1, h2, h3 {
+  font-family: $fuente-titulos;
+}
+h1 {
+  color: $color-primario;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+h2 {
+  color: $color-texto;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+h3 {
+  color: $color-primario;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+p {
+  font-family: $fuente-texto;
+  color: $color-texto;
+  font-size: 16px;
+  margin-bottom: 12px;
+}

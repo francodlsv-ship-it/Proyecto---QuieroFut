@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+nav {
+  .navbar-brand {
+    color: $color-primario;
+  }
+}

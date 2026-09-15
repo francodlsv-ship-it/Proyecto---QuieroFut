@@ -1,0 +1,8 @@
+@use "../utilities/variables" as *;
+nav {
+  .nav-link {
+    &.active {
+      color: $color-primario;
+    }
+  }
+}

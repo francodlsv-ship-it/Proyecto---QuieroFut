@@ -1,9 +1,12 @@
 @use "utilities/variables" as *;
 @use "utilities/mixins" as *;
-@use "base/typography" as *;
-@use "base/base" as *;  
-@use "layout/header" as *;
-@use "layout/nav" as *; 
-@use "layout/footer" as *;
-@use "components/buttons" as *;
-@use "components/cards" as *;
+
+@use "base/tipografia";
+@use "base/base";
+
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/cards";

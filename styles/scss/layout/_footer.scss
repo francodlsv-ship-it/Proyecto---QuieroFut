@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+footer {
+  a {
+    color: $color-blanco;
+    &:hover {
+      color: $color-primario;
+    }
+  }
+}

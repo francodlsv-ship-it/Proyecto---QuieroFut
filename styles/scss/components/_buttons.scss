@@ -1,12 +1,11 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 .btn-primary {
-    background-color: $primary-color;
-    color: white;
-    border-radius: $radio-bordes;
-    @include transition(opacity, 0.3s);
-    &:hover {
-        opacity: 0.8;
-    }
+  background: $color-primario;
+  color: white;
+  border-radius: $radio-borde;
+  @include transicion(background-color);
+  &:hover {
+    opacity: 0.9;
+  }
 }
-
