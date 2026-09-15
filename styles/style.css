@@ -1,18 +1,134 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |   color: $color-texto-claro;
- *    |          ^^^^^^^^^^^^^^^^^^
- *    '
- *   styles\scss\base\_base.scss 11:10  @use
- *   styles\scss\main.scss 5:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    color: $color-texto-claro;\d\a    \2502           ^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles\\scss\\base\\_base.scss 11:10  @use\a   styles\\scss\\main.scss 5:1          root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap");
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+  color: #00b4d8;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #94a3b8;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: #00b4d8;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #94a3b8;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #16191c;
+  font-family: "Roboto", sans-serif;
+  color: #cbd5e1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 32px 24px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 40px 32px;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+section:last-child {
+  margin-bottom: 0;
+}
+
+nav .navbar-brand {
+  color: #00b4d8;
+}
+
+nav .nav-link.active {
+  color: #00b4d8;
+}
+
+footer a {
+  color: #fffffa;
+}
+footer a:hover {
+  color: #00b4d8;
+}
+
+.btn-primary {
+  background: #00b4d8;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.card, article {
+  transition: transform 0.3s ease;
+}
+.card:hover, article:hover {
+  transform: translateY(-4px);
+}
+
+article {
+  background: #1e232a;
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0;
+}
+figure img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
