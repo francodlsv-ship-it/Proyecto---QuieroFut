@@ -14,4 +14,20 @@ Estas páginas son:
     * proyectos.html
     * contacto.html
     * servicios.html.
-* Carpeta imagenes: Almacena las fotos y recursos visuales que se muestran en la web.   
+* Carpeta imagenes: Almacena las fotos y recursos visuales que se muestran en la web.
+
+- Sobre los estilos (SCSS)
+Antes tenia todo el css en un solo archivo, pero lo fui separando en varios archivos mas chicos para que sea mas facil de entender y de modificar. Ahora funciona asi:
+* styles/scss/main.scss: es el archivo principal, ahi adentro solo llamo a todos los demas archivos con @use.
+* styles/scss/utilities: aca puse las diferentes variables y algunos mixins que arme para no repetir codigo, como uno para las transiciones y otros para cuando la pantalla es chica o grande.
+* styles/scss/base: los estilos mas generales, como el fondo de la pagina, los titulos y los parrafos.
+* styles/scss/layout: los estilos del menu de arriba  y del pie de pagina.
+* styles/scss/components: los estilos de cosas que se repiten en varias paginas, como los botones y las cards.
+
+Todo eso se junta y se convierte en un solo archivo, styles/style.css, que es el que usa la pagina. Para que funcione hay que correr este comando:
+sass styles/scss/main.scss styles/style.css
+- Con que lo hice
+* HTML5
+* SCSS (despues se compila a CSS)
+* Bootstrap 5
+como solicitaba la consigna del curso 
