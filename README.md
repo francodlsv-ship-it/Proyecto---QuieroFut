@@ -1,7 +1,7 @@
 -Mi Proyecto: QuieroFut
 
 * Repositorio: https://github.com/francodlsv-ship-it/Proyecto---QuieroFut
-* Sitio publicado: https://proyecto-quiero-fut.vercel.app/ utilizando la pagina Vercel crecomendada.
+* Sitio publicado: https://proyecto-quiero-fut.vercel.app/ utilizando la pagina Vercel recomendada.
 
 Este es mi proyecto para el curso, llamado QuieroFut. Es un sitio web básico que armé sobre mi pasión por el fútbol, donde la idea principal es subir análisis de partidos y datos de este mundo, para de esta manera poder compartir esta pasion con personas que compartan y amen este deporte como yo.
 
